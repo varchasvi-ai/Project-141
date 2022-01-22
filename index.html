@@ -1,0 +1,51 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+
+        <div style="width: 100%;" id="header" class="btn btn-danger header">
+            <h1 style="color: white">AI PING PONG GAME</h1>
+            <button style="border:1px solid white;float:right;display:inline;" class="btn btn-danger">Instructions</button>
+        </div>
+
+        <br><br>
+        <button onclick="playGame()" class="btn btn-primary">Play Game</button>
+        <button onclick="restartGame()" class="btn btn-primary">Restart Game</button>
+
+        <div id="canvas"></div>
+        <div id="gameConsole"></div>
+    
+        <div id="myModal" class="modal fade">
+            <div id="modal-dialog">
+                <div id="modal-content">
+                    <div id="modal-header">
+                        <h4>INSTRUCTIONS</h4>
+                    </div>
+                    <div id="modal-body">
+                        <ol>
+                            <li>Keep 3 feet away from your camera</li>
+                            <li>You can control the paddle with the movement of you right hand</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="footer"> Source Cose <a href="https://github.com/linuk">Linuk</a>//Game Credit - Mario</h4>
+        <script src="main.js"></script>
+        </center>
+    </body>
+</html>
